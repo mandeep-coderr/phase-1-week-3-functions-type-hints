@@ -74,3 +74,21 @@ toggle_mode()
 check_mode()
 toggle_mode()
 check_mode()
+
+# Global other Group
+country = "India"
+
+# Enclosing
+def state():
+    state_name = "Maharashtra"
+    
+    def city():
+        city_name = "Mumbai"
+        print(f" City Name: {city_name}")
+        print(f" State Name: {state_name}")
+        print(f" Country: {country}")
+        print(len("Hello"))
+
+    city()
+
+state() 
