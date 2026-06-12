@@ -84,3 +84,17 @@ def set_debug():
 
 set_debug()
 print(global_log)
+
+# Part 8
+def sum_all(*args, **kwargs):
+    multiplier = kwargs.get("multiplier", 1)
+    total = sum(args)
+    return total * multiplier
+
+# Call the function
+result = sum_all(15, 23, 36, 47, multiplier=2)
+print(result)
+
+# Without multiplier (default any value)
+result2 = sum_all(11, 65, 87)
+print(result2)
